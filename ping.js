@@ -1,3 +1,6 @@
+function ping() {
+    window.alert("sometext");
+}
 function pingURL() { 
 
   
