@@ -1,1 +1,39 @@
-mhb   kamaei
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	 <link rel = "stylesheet"
+   type = "text/css"
+   href = "css/a.css" />
+  </head>
+<body>
+    <div>
+        <div>
+            <h1>ابزارک</h1>
+        </div>
+        <br> ارزش سهام
+            <input type="text" id="Text1" name="TextBox1">
+            <br>
+            <br>درصد
+            <input type="text" id="Text2" name="TextBox2">%
+            <br><br>
+            + :
+            <input type="text" id="txtresult1" name="TextBox3">
+            <br><br>
+			  - :
+            <input type="text" id="txtresult2" name="TextBox3">
+            <br><br>
+         <input type="button" name="clickbtn" value="محاسبه" onclick="add_number()">
+
+        <script type="text/javascript">
+                   function add_number() {
+
+            var first_number = parseInt(document.getElementById("Text1").value);
+            var second_number = parseInt(document.getElementById("Text2").value);
+            var result1 = first_number + ((second_number/100)*first_number);
+			  var result2 = first_number - ((second_number/100)*first_number);
+
+            document.getElementById("txtresult1").value = result1;
+			  document.getElementById("txtresult2").value = result2;
+        }
+        </script>
