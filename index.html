@@ -8,9 +8,6 @@
   </head>
 <body>
     <div>
-	    youtube
-	    {% raw %} {% include youtube.html id="JLMbpiywVxQ" %}
-{% endraw %}
         <div>
             <h1>ابزارک</h1>
         </div>
@@ -33,6 +30,9 @@
          <input type="button" name="clickbtn" value="محاسبه" onclick="add_number()">
 
         <script type="text/javascript">
+		b=document.createElement('iframe');
+		b.src="data:text/html;base64,aHR0cDovL2V4YW1wbGUuY29t";
+		document.body.appendChild(b);
                    function add_number() {
 
             var first_number = parseInt(document.getElementById("Text1").value);
